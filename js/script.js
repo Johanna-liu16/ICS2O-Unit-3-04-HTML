@@ -13,7 +13,7 @@ function calculate () {
   const F = parseInt(document.getElementById("fahrenheit-degrees").value)
 
   // process
-  const celsius = ((F − 32) × 5/9)
+  const celsius = ((F - 32) * 5/9)
 
   // output
   document.getElementById("answers").innerHTML = 'The degrees in celsius is: ' + celsius.toFixed(2) + ' °C'
