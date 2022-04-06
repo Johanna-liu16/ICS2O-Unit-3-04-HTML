@@ -27,26 +27,37 @@
         </div>
       </header>
       <main class = "mdl-layout__content">
-         <!-- Numeric Textfield -->
-          <form action="#">
-            <p>Fahrenheit</p>
-            <div class="mdl-textfield mdl-js-textfield">
-              <input
-                class="mdl-textfield__input"
-                type="number"
-                step=".01"
-                id="fahrenheit-degrees"/>
-              <label class="mdl-textfield__label" for="fahrenheit-degrees">Enter degrees in fahrenheit ...</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
+          <table>
+            <tr>
+              <th>
+                <img src="./image/temperature.png" alt="pyramid" width="55%" height="20%" />
+              </th>
+              <th>
+                <h2>Formulas</h2>
+                <h3>°C = (°F − 32) × 5/9 </h3>
+              </th>
+            </tr>
+          </table>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Fahrenheit</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step=".01"
+              id="fahrenheit-degrees"/>
+            <label class="mdl-textfield__label" for="fahrenheit-degrees">Enter degrees in fahrenheit ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
              
-            <!-- Raised button with ripple -->
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculate()">
-              Calculate
-            </button>
-            <br />
-            <br>
-            <div id="answers"></div>
+          <!-- Raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculate()">
+            Calculate
+          </button>
+          <br />
+          <br>
+          <div id="answers"></div>
         </form>
       </main>
     </div>
